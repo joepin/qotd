@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Question of the Day</title>
+</head>
+
+<body>
+	<label for="input_ciphertext">Ciphertext</label>
+	<textarea name="input_ciphertext" id="input_ciphertext" rows="3" cols="100"></textarea>
+	<br>
+	<br>
+	<br>
+
+	<p>Key Mapping</p>
+	<label for="input_key_A">A:</label>
+	<input type="text" id="input_key_A" name="input_key_A" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_B">B:</label>
+	<input type="text" id="input_key_B" name="input_key_B" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_C">C:</label>
+	<input type="text" id="input_key_C" name="input_key_C" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_D">D:</label>
+	<input type="text" id="input_key_D" name="input_key_D" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_E">E:</label>
+	<input type="text" id="input_key_E" name="input_key_E" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_F">F:</label>
+	<input type="text" id="input_key_F" name="input_key_F" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_G">G:</label>
+	<input type="text" id="input_key_G" name="input_key_G" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_H">H:</label>
+	<input type="text" id="input_key_H" name="input_key_H" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_I">I:</label>
+	<input type="text" id="input_key_I" name="input_key_I" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_J">J:</label>
+	<input type="text" id="input_key_J" name="input_key_J" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_K">K:</label>
+	<input type="text" id="input_key_K" name="input_key_K" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_L">L:</label>
+	<input type="text" id="input_key_L" name="input_key_L" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_M">M:</label>
+	<input type="text" id="input_key_M" name="input_key_M" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_N">N:</label>
+	<input type="text" id="input_key_N" name="input_key_N" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_O">O:</label>
+	<input type="text" id="input_key_O" name="input_key_O" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_P">P:</label>
+	<input type="text" id="input_key_P" name="input_key_P" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_Q">Q:</label>
+	<input type="text" id="input_key_Q" name="input_key_Q" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_R">R:</label>
+	<input type="text" id="input_key_R" name="input_key_R" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_S">S:</label>
+	<input type="text" id="input_key_S" name="input_key_S" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_T">T:</label>
+	<input type="text" id="input_key_T" name="input_key_T" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_U">U:</label>
+	<input type="text" id="input_key_U" name="input_key_U" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_V">V:</label>
+	<input type="text" id="input_key_V" name="input_key_V" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_W">W:</label>
+	<input type="text" id="input_key_W" name="input_key_W" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_X">X:</label>
+	<input type="text" id="input_key_X" name="input_key_X" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_Y">Y:</label>
+	<input type="text" id="input_key_Y" name="input_key_Y" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<label for="input_key_Z">Z:</label>
+	<input type="text" id="input_key_Z" name="input_key_Z" pattern="[A-Z]{1}" minlength=1 maxlength=1>
+	<br>
+	<br>
+
+	<button type="submit" id="button_decipher">Decipher</button>
+
+	<p>Deciphered text</p>
+	<p id="output_deciphered"></p>
+
+	<script>
+		// utility functions
+		function isLetter(str) {
+		  return str.length === 1 && str.match(/[a-z]/i);
+		}
+
+		// global variables
+		var STORAGE_KEY_CIPHERTEXT = "qotd_input_ciphertext";
+		var STORAGE_KEY_CIPHERKEY = "qotd_input_cipherkey";
+		var cipherKey = {};
+
+		function decipher(input) {
+			if (!input || input.length === 0) {
+				return "";
+			}
+			var output = "";
+			for (var i = 0; i < input.length; i++) {
+				// skip punctuation marks (comma, period, space, etc.)
+				if (!isLetter(input[i])) {
+					output += input[i];
+					continue;
+				}
+
+				var transformed = "_";
+				var deciphered = cipherKey[input[i].toUpperCase()];
+				if (deciphered !== "") {
+					transformed = deciphered;
+				}
+				output += transformed;
+			}
+			return output
+		}
+
+		// utility function to decipher the text and show it to the user
+		function decipherAndPrint() {
+			var input = localStorage.getItem(STORAGE_KEY_CIPHERTEXT);
+			var deciphered = decipher(input);
+			var withBreaks = deciphered.split("\n").join("<br>");
+			var outputDeciphered = document.getElementById("output_deciphered");
+			outputDeciphered.innerHTML = withBreaks;
+		}
+
+		function validateCipherText() {
+			var validation = {};
+			for (var k in cipherKey) {
+				// clean up any keys that are not letters
+				if (!isLetter(k)) {
+					delete cipherKey[k];
+					continue;
+				}
+
+				var v = cipherKey[k];
+				// ignore empty values
+				if (v === "") {
+					continue;
+				}
+
+				// check if the value exists already
+				if (validation.hasOwnProperty(v)) {
+					return false;
+				}
+				validation[v] = "";
+			}
+			return true;
+		}
+
+
+		function inputKeyHandler(e, letter) {
+			var upper = e.target.value.toUpperCase();
+			cipherKey[letter] = upper;
+			if (!validateCipherText()) {
+				e.target.value = "";
+				return;
+			}
+			e.target.value = upper;
+			localStorage.setItem(STORAGE_KEY_CIPHERKEY, JSON.stringify(cipherKey));
+		}
+
+		function initializeCiphertextInput() {
+			var inputCiphertext = document.getElementById("input_ciphertext");
+			inputCiphertext.addEventListener("input", function(e) {
+				localStorage.setItem(STORAGE_KEY_CIPHERTEXT, e.target.value)
+			})
+			savedCiphertext = localStorage.getItem(STORAGE_KEY_CIPHERTEXT);
+			inputCiphertext.value = savedCiphertext;
+		}
+
+		function initializeDecipherButton() {
+			var buttonDecipher = document.getElementById("button_decipher");
+			buttonDecipher.addEventListener("click", decipherAndPrint);
+		}
+		
+		function initializeCipherKeyInputs() {
+			// var letters = "abcdefghijklmnopqrstuvwxyz";
+			var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			var savedCipherKey = localStorage.getItem(STORAGE_KEY_CIPHERKEY);
+			if (savedCipherKey !== "") {
+				var parsedCipherKey = JSON.parse(savedCipherKey);
+				if (parsedCipherKey) {
+					cipherKey = parsedCipherKey;
+				}
+			}
+			for (var i = 0; i < letters.length; i++) {
+				var letter = letters[i];
+
+				// initialize the dictionary with saved values, creating new ones if they don't exist
+				var saved = cipherKey[letter];
+				if (!saved) {
+					cipherKey[letter] = "";
+				}
+
+				// for each key input field, init the value from localStorage and set up event handler
+				var keyID = "input_key_" + letter;
+				var input = document.getElementById(keyID);
+				input.value = cipherKey[letter];
+				(function(letter){
+				   input.addEventListener("input", function (e) {
+				     inputKeyHandler(e, letter);
+				   });
+				})(letter);
+			}
+		}
+
+		function initializeDecipheredText() {
+			decipherAndPrint()
+		}
+
+		function initialize() {
+			initializeCiphertextInput();
+			initializeDecipherButton();
+			initializeCipherKeyInputs();
+			initializeDecipheredText();
+		}
+		initialize();
+	</script>
+</body>
+</html>
